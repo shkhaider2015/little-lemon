@@ -1,0 +1,82 @@
+.home-wrapper {
+    min-height: 100vh;
+}
+
+.hero {
+    height: 80vh;
+    width: 100%;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 8%;
+}
+
+.hero>.texts {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 50%;
+    gap: 5px;
+}
+
+.hero>.texts>h1 {
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;
+    color: var(--secondary-color);
+}
+
+.hero>.texts>h3 {
+    font-size: 2rem;
+    padding: 0px;
+    margin: 0px;
+    color: var(--white);
+}
+
+.hero>.texts p {
+    font-size: 1rem;
+    color: var(--white);
+    width: 60%;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.hero>.texts .btn {
+    text-decoration: none;
+    padding: 20px 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 16px;
+    width: max-content;
+    margin-top: 50px;
+    opacity: 1;
+    transition: opacity .2s;
+}
+
+.hero>.texts .btn:hover {
+    opacity: .7;
+}
+
+.hero>.image-wrapper {
+    width: 40%;
+    height: 80%;
+    position: relative;
+}
+
+.hero>.image-wrapper>picture>img {
+    width: 500px;
+    height: 600px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: -180px;
+    margin-left: -100px;
+    border-radius: 16px;
+    -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
