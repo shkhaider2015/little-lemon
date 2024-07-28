@@ -3,6 +3,8 @@ import Navbar from "../../components/Navbar";
 import "./style.css";
 import { LOREM_TEXT } from "../../constants";
 import { HERO_IMAGE } from "../../assets";
+import DishCard from "../../components/DishCard";
+import { DISH_DATA } from "../../assets/data";
 
 const Home = () => {
   return (
@@ -13,13 +15,23 @@ const Home = () => {
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>
           <p>{LOREM_TEXT}</p>
-          <a href="#" className="btn">Reserve a Table</a>
+
+          <a href="#" className="btn">
+            Reserve a Table
+          </a>
         </div>
         <div className="image-wrapper">
-        <picture>
+          <picture>
             <img src={HERO_IMAGE} alt="Restaurant Foods in chief hand" />
-        </picture>
-
+          </picture>
+        </div>
+      </section>
+      <section className="specials">
+        <h1>This Week Specials</h1>
+        <div className="dish-list">
+          {
+            DISH_DATA.slice(0, 5).map(item => <DishCard item={item} />)
+          }
         </div>
       </section>
     </main>

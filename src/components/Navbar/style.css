@@ -8,6 +8,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1% 8%;
+    z-index: 2;
 }
 nav > picture {
     width: 20%;
