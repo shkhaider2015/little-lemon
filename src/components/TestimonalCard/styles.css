@@ -1,0 +1,72 @@
+.testimonal-card {
+    width: 380px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 10px;
+    flex: 0 0 auto;
+}
+
+.testimonal-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    -webkit-box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+.testimonal-card h3 {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 10px;
+    color: var(--primary-color);
+}
+
+.testimonal-card .testimonal-rating {
+    margin-top: 10px;
+}
+
+.testimonal-card blockquote {
+    width: 75%;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    border: none;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.testimonal-card blockquote .descrioption {
+
+    text-align: center;
+    margin-top: 20px;
+    opacity: .8;
+    font-size: 14px;
+    position: relative;
+}
+
+.testimonal-card blockquote .descrioption::before {
+    content: open-quote;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    font-size: 50px;
+    font-weight: bold;
+    color: var( --primary-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: -15px 0px 0px -20px;
+}
+
+.testimonal-card blockquote .descrioption::after {
+    content: close-quote;
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    font-size: 50px;
+    font-weight: bold;
+    color: var( --primary-color);
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    margin: 0px -20px -35px 0px;
+}

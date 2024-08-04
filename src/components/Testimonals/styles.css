@@ -1,0 +1,52 @@
+.testimonal {
+    height: 60vh;
+    background-color: var(--primary-color);
+    padding: 8% 8%;
+}
+
+.testimonal h1 {
+    text-align: center;
+    font-size: 4rem;
+    padding: 0px;
+    margin: 0px;
+    color: var(--secondary-color);
+}
+
+.testimonal .testimonal-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin: 70px 0px 0px 0px;
+}
+
+.testimonal .testimonal-row .abs-sec {
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 350px;
+    background: var(--primary-color)
+}
+
+.testimonal .testimonal-row .abs-sec.left-shadow {
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, var(--primary-color) 0%, rgba(255, 255, 255, 0) 99%);
+}
+
+.testimonal .testimonal-row .abs-sec.right-shadow {
+    right: 0;
+    background: linear-gradient(270deg, var(--primary-color) 0%, rgba(255, 255, 255, 0) 99%);
+}
+
+.testimonal .testimonal-row .testimonal-cards-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 80px;
+    padding: 0px 40px 20px 40px;
+    width: calc(100vw - 16%);
+    overflow-x: auto;
+}

@@ -94,16 +94,42 @@
 
 .specials h1 {
     font-size: 4rem;
+    margin-left: 0%;
 }
 
-.specials .dish-list {
+.specials .dish-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.specials .dish-row .abs-sec {
+    position: absolute;
+    top: 0;
+    width: 120px;
+    height: 550px;
+    background: rgb(255, 255, 255);
+}
+.specials .dish-row .abs-sec.left-shadow {
+    left: 0;
+    z-index: 1;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 99%);
+}
+
+.specials .dish-row .abs-sec.right-shadow {
+    right: 0;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 99%);
+}
+
+.specials .dish-row .dish-list {
     position: relative;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: nowrap;
     gap: 80px;
-    padding: 15px 0px;
+    padding: 15px 20px;
     width: calc(100vw - 16%);
     overflow-x: auto;
 }
