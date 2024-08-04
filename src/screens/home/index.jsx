@@ -7,6 +7,7 @@ import DishCard from "../../components/DishCard";
 import { DISH_DATA } from "../../assets/data";
 import Testimonal from "../../components/Testimonals";
 import About from "../../components/About";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
@@ -42,6 +43,7 @@ const Home = () => {
       </section>
       <Testimonal />
       <About />
+      <Footer />
     </main>
   );
 };
