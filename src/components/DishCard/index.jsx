@@ -1,13 +1,12 @@
 import React from "react";
 import "./styles.css";
-import { GREEK_SALAAD } from "../../assets";
 
 const DishCard = ({item}) => {
   return (
     <article className="card-root" >
       <div className="card-head">
         <picture>
-          <img src={item.image} alt="Greek Salad Image" />
+          <img src={item.image} alt="Greek Salad" />
         </picture>
       </div>
       <div className="card-body">

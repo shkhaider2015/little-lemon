@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
 import "./style.css";
-import { LOREM_TEXT } from "../../constants";
+import { LOREM_TEXT, sectionIds } from "../../constants";
 import { HERO_IMAGE } from "../../assets";
 import DishCard from "../../components/DishCard";
 import { DISH_DATA } from "../../assets/data";
@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <main className="home-wrapper">
       <Navbar />
-      <section className="hero">
+      <section id={sectionIds.HOME} className="hero">
         <div className="texts">
           <h1>Little Lemon</h1>
           <h3>Chicago</h3>
@@ -29,7 +29,7 @@ const Home = () => {
           </picture>
         </div>
       </section>
-      <section className="specials">
+      <section id={sectionIds.MENU} className="specials">
         <h1>This Week Specials</h1>
         <div className="dish-row">
           <div className="abs-sec left-shadow" />

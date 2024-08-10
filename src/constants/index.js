@@ -27,3 +27,10 @@ dolores nisi maiores tenetur fugiat doloribus exercitationem aut
 corrupti nihil expedita placeat, quia voluptatem, quaerat nam ab
 quae molestiae! Distinctio, vitae.
 `;
+
+export const sectionIds = {
+    HOME: 'home_section',
+    ABOUT: 'about_section',
+    MENU: 'menu_reservation',
+    RESERVATION: 'reservation_section'
+}

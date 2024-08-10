@@ -4,7 +4,7 @@ import PrivateRoute from "./private";
 import { LazyHome, LazyReserveTable } from "../screens/lazyScreens";
 
 const Routes = () => {
-    const isAuthenticated = false;
+    const isAuthenticated = true;
 
   return (
     <Router>

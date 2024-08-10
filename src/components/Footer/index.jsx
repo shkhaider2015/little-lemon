@@ -8,7 +8,6 @@ import {
   Location,
   Mobile,
   StackOverflow,
-  Twitter,
 } from "../../assets";
 
 const Footer = () => {
@@ -48,13 +47,13 @@ const Footer = () => {
       <div className="socials-col">
         <h2>Connect with us</h2>
         <div className="social-logos">
-          <a href="https://www.linkedin.com/in/shakeel-haider-818233176/" target="_blank">
+          <a href="https://www.linkedin.com/in/shakeel-haider-818233176/" target="_blank" rel="noreferrer" >
             <img src={LinkedIn} alt="" />
           </a>
-          <a href="https://www.facebook.com/" target="_blank">
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" >
             <img src={Facebook} alt="" />
           </a>
-          <a href="https://stackoverflow.com/users/8307195/shakeel-haider" target="_blank">
+          <a href="https://stackoverflow.com/users/8307195/shakeel-haider" target="_blank" rel="noreferrer" >
             <img src={StackOverflow} alt="" />
           </a>
         </div>
