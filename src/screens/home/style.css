@@ -95,6 +95,7 @@
 .specials h1 {
     font-size: 4rem;
     margin-left: 0%;
+    color: var(--primary-color);
 }
 
 .specials .dish-row {
